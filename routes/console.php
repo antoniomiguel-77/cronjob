@@ -11,6 +11,6 @@ Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->purpose('Display an inspiring quote')->hourly();
 
-Schedule::call(function () {
-    Mail::to('albino77miguel@gmail.com')->send(new NotifyMail("Hello CronJob"));
-})->everySecond();
+// Schedule::call(function () {
+//     Mail::to('albino77miguel@gmail.com')->send(new NotifyMail("Hello CronJob"));
+// })->everySecond();
