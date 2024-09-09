@@ -8,5 +8,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/send', function () {
-    Mail::to('albino77miguel@gmail.com')->send(new NotifyMail("Hello CronJob"));
+    Mail::to('info@xzero.ao')->send(new NotifyMail("Hello CronJob"));
 });
